@@ -1,8 +1,8 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -10,7 +10,8 @@ body {
 }
 
 hr {
-    color: #464f6a;
+    border: 1px solid #464f6a;
+
 }
 
 h1 {
@@ -38,14 +39,14 @@ main {
     max-width: 1085px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #99a2c0;
-    height: 100vh;
+    background-color: #a5acc4;
+    min-height: 100vh;
 }
 
 #top {
     display: grid;
     grid-template:
-        "a b" ;
+        "a b";
 }
 
 #achievements {
@@ -54,8 +55,26 @@ main {
         "a b" /1fr 1fr;
 }
 
+@media (max-width: 790px) {
+    #top {
+        display: grid;
+        grid-template:
+            "a"
+            "b";
+    }
+
+    #achievements {
+        display: grid;
+        grid-template:
+            "a"
+            "b";
+    }
+}
+
 #image {
     grid-area: a;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #movies {
@@ -68,4 +87,19 @@ main {
 
 #awards {
     grid-area: b;
+}
+
+.pending {
+     color: rgb(255, 255, 255);
+     text-shadow: #464f6a 1px 6 5px;  
+     /* fixa blurr på texten!! */
+}
+
+.winner {
+    color: #88522f;
+     /* rgb(255, 217, 0); */
+}
+
+.nominee {
+    color: #464f6a;
 }
