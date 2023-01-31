@@ -6,11 +6,11 @@
 }
 
 body {
-    background-color: rgb(1, 1, 70);
+    background-color: #464f6a;
 }
 
 hr {
-    color: rgb(1, 1, 70);
+    color: #464f6a;
 }
 
 h1 {
@@ -38,7 +38,7 @@ main {
     max-width: 1085px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(188, 188, 240);
+    background-color: #99a2c0;
     height: 100vh;
 }
 
@@ -54,10 +54,18 @@ main {
         "a b" /1fr 1fr;
 }
 
-#image, #movies {
+#image {
     grid-area: a;
 }
 
-#biography, #awards {
+#movies {
+    grid-area: a;
+}
+
+#biography {
+    grid-area: b;
+}
+
+#awards {
     grid-area: b;
 }
