@@ -1,3 +1,63 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    background-color: rgb(1, 1, 70);
+}
+
+hr {
+    color: rgb(1, 1, 70);
+}
+
 h1 {
-    color: red;
+    font-style: italic;
+}
+
+img {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+}
+
+h1,
+h2 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+address {
+    text-align: center;
+}
+
+main {
+    max-width: 1085px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(188, 188, 240);
+    height: 100vh;
+}
+
+#top {
+    display: grid;
+    grid-template:
+        "a b" ;
+}
+
+#achievements {
+    display: grid;
+    grid-template:
+        "a b" /1fr 1fr;
+}
+
+#image, #movies {
+    grid-area: a;
+}
+
+#biography, #awards {
+    grid-area: b;
 }
