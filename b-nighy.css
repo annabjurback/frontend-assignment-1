@@ -34,9 +34,9 @@ p {
 }
 
 hr {
-    border: 1px solid #464f6a;
+    border-top: 1px solid #464f6a;
+    border-bottom: transparent;
     margin: 0;
-    /* fixa till denna! eller byt ut hr mot ngt annat*/
 }
 
 h1 {
